@@ -1,0 +1,20 @@
+{
+  "name": "signal-and-story-data-detective",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A static age-15 data-literacy investigation about graph framing, sampling bias and correlation.",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/model.test.mjs",
+    "test:browser": "node tests/browser.test.mjs",
+    "test:all": "npm test && npm run test:browser"
+  },
+  "engines": {
+    "node": ">=24.0.0 <25"
+  },
+  "devDependencies": {
+    "axe-core": "^4.13.0",
+    "puppeteer-core": "^25.10.0"
+  }
+}

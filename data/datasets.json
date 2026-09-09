@@ -1,0 +1,64 @@
+﻿{
+  "project": {
+    "title": "Signal & Story: Data Detective",
+    "fictionalContext": "All organisations, headlines and records in the learner experience are fictional and all datasets are synthetic.",
+    "provenance": "Original synthetic datasets authored for Taskmarket TSK-5DV55M47. They represent invented arcade/puzzle-room records and are not observations of real people or scientific findings."
+  },
+  "graphFraming": {
+    "title": "Nova Arcade queue board",
+    "fictionalOrganisation": "Nova Arcade is fictional.",
+    "unit": "seconds",
+    "xLabel": "Event night",
+    "yLabel": "Average match wait (seconds)",
+    "records": [
+      {"night":"Night 1","waitSeconds":82},
+      {"night":"Night 2","waitSeconds":80},
+      {"night":"Night 3","waitSeconds":79},
+      {"night":"Night 4","waitSeconds":77},
+      {"night":"Night 5","waitSeconds":75},
+      {"night":"Night 6","waitSeconds":74}
+    ],
+    "construction": "Six deliberately simple integer values were chosen to create a modest downward pattern. Changing chart minimum never changes these records or the statistics computed from them.",
+    "dictionary": {
+      "night": "Fictional event-night sequence label.",
+      "waitSeconds": "Synthetic average match wait for that event night, measured in seconds."
+    }
+  },
+  "sampling": {
+    "title": "Orbit Puzzle Room exit ratings",
+    "fictionalOrganisation": "Orbit Puzzle Room is fictional.",
+    "unit": "rating on a 1–5 scale",
+    "populationSize": 240,
+    "blocks": ["Opening hour","Mid-session","Late session","Closing hour"],
+    "construction": "The population contains 60 synthetic visits in each time block. Ratings are generated from a repeating deterministic pattern with progressively higher block-level averages, making a closing-hour-only frame visibly unrepresentative of the full population.",
+    "dictionary": {
+      "id": "Synthetic visit identifier; not a person identifier.",
+      "timeBlock": "One of four fictional visit windows.",
+      "rating": "Synthetic exit rating on a 1–5 scale."
+    }
+  },
+  "correlation": {
+    "title": "Skyline Puzzle League sessions",
+    "fictionalOrganisation": "Skyline Puzzle League is fictional.",
+    "xLabel": "Hints used",
+    "yLabel": "Completion time (seconds)",
+    "thirdVariable": "Puzzle difficulty",
+    "construction": "Forty-five synthetic sessions are split evenly among easy, medium and hard puzzles. Harder groups receive both more hints and longer base completion times. Within a difficulty group, extra hints are constructed to be weakly associated with shorter times, creating a third-variable explanation for the overall positive association.",
+    "dictionary": {
+      "session": "Synthetic session identifier.",
+      "difficulty": "Invented puzzle difficulty group: Easy, Medium or Hard.",
+      "hints": "Number of hints used during the synthetic session.",
+      "seconds": "Synthetic puzzle completion time in seconds."
+    }
+  },
+  "transferCase": {
+    "headline": "FICTIONAL HEADLINE — BrightByte Games: ‘New scoreboard triples replay interest!’",
+    "fictionalOrganisation": "BrightByte Games is fictional.",
+    "facts": [
+      "A graph shows replay-interest scores rising from 51 to 55 on a vertical axis drawn from 50 to 56.",
+      "The survey link appeared only on the tournament-final screen, even though the claim describes all players.",
+      "Players who used the scoreboard more often also tended to play more sessions; session count could help explain both variables."
+    ],
+    "construction": "This transfer case is a fictional text-only composite designed to require graph-framing, sampling and correlation reasoning without implying a real product finding."
+  }
+}
