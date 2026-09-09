@@ -2,7 +2,7 @@
 
 A 10–15 minute, age-15 data-literacy investigation built for Taskmarket TSK-5DV55M47. Learners investigate graph framing, sampling coverage, correlation/causation, and then apply the ideas to a fresh fictional headline.
 
-**Preview:** deployment URL is recorded in `READY.md` and will also be added here after GitHub Pages is enabled.
+**Preview:** https://tlaz10.github.io/data-detective-age15-20260909/
 
 ## What the learner does
 
@@ -89,3 +89,4 @@ The project is static. GitHub Pages can publish the repository root from `main`;
 - `DATA_NOTES.md` — synthetic-data provenance, construction, units, and dictionary.
 - `THIRD_PARTY_NOTICES.md` — dependency/media attribution.
 - `LICENSE` — MIT license for original project code/content.
+
